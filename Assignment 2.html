@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Embedded CSS</title>
+    <style>
+        /* Embedded CSS using only element selectors */
+
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #e8f4f8;
+            color: #333;
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        h2 {
+            color: #263a36;
+           font-family: 'Times New Roman', Times, serif;
+        }
+
+        p {
+            font-size: 16px;
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        a {
+            color: #2b29b9;
+            text-decoration: underline;
+        }
+
+        ul {
+            list-style-type: circle;
+            color: #27ae60;
+
+        }
+
+        ol {
+            list-style-type: decimal;
+            color: #c0392b;
+            
+        }
+
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        th, td {
+            border: 1px solid #7f8c8d;
+            text-align: left;
+        }
+
+        th {
+            background-color: #2677ad;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                background-color: #fef6e4;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            p, ul, ol {
+                font-size: 14px;
+            }
+
+            table {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Embedded CSS </h1>
+
+    <h2>CSS Selector Types (For Reference)</h2>
+    <p>Here are the common types of CSS selectors. This page only uses <strong>element selectors</strong> for styling.</p>
+    <ul>
+        <li><strong>Element Selector</strong> – targets HTML tags (e.g., <code>p</code>, <code>h1</code>, <code>table</code>)</li>
+        <li><strong>Class Selector</strong> – targets elements with a specific class (e.g., <code>.highlight</code>)</li>
+        <li><strong>ID Selector</strong> – targets an element with a specific ID (e.g., <code>#main-title</code>)</li>
+        <li><strong>Universal Selector</strong> – targets all elements (e.g., <code>*</code>)</li>
+        <li><strong>Group Selector</strong> – styles multiple elements at once (e.g., <code>h1, h2, p</code>)</li>
+        <li><strong>Descendant Selector</strong> – targets elements inside other elements (e.g., <code>div p</code>)</li>
+        <li><strong>Child Selector</strong> – targets direct children (e.g., <code>ul > li</code>)</li>
+        <li><strong>Attribute Selector</strong> – targets elements with specific attributes (e.g., <code>input[type="text"]</code>)</li>
+        <li><strong>Pseudo-class Selector</strong> – targets elements in a specific state (e.g., <code>a:hover</code>)</li>
+    </ul>
+
+    <h2>Paragraph Styling</h2>
+    <p>This paragraph demonstrates basic text styling using the <code>p</code> element selector.</p>
+
+    <h2>Links</h2>
+    <p>Here is a link styled using the <code>a</code> element selector: 
+       <a href="https://xavieropurozor.github.io/Xavier-Tech-Hub/index.html" target="_blank">My Website </a>
+    </p>
+
+    <h2>Unordered List</h2>
+    <ul>
+        <li>Milk</li>
+        <li>Bread</li>
+        <li>Eggs</li>
+    </ul>
+
+    <h2>Ordered List</h2>
+    <ol>
+        <li>Wake up</li>
+        <li>Brush teeth</li>
+        <li>Have breakfast</li>
+    </ol>
+
+    <h2>Table Styling</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Language</th>
+                <th>Creator</th>
+                <th>Year</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Python</td>
+                <td>Guido van Rossum</td>
+                <td>1991</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Brendan Eich</td>
+                <td>1995</td>
+            </tr>
+            <tr>
+                <td>Ruby</td>
+                <td>Yukihiro Matsumoto</td>
+                <td>1995</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
