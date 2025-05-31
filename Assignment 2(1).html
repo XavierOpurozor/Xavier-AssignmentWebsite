@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Embedded Method</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f8fb;
+      color: #333;
+      margin: 40px;
+      line-height: 1.6;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    h2 {
+      color: #0077cc;
+      margin-top: 30px;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    code {
+      background-color: #e6f0ff;
+      padding: 2px 5px;
+      border-radius: 4px;
+      font-family: Consolas, monospace;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Understanding the CSS Embedded Method</h1>
+
+  <h2>Introduction to CSS</h2>
+  <p>CSS (<strong>Cascading Style Sheets</strong>) is used to style HTML content by adding colors, layouts, fonts, and more. It plays a vital role in enhancing the visual structure of websites and web applications.</p>
+
+  <h2>What is Embedded CSS?</h2>
+  <p>
+    Embedded CSS refers to placing style rules inside the HTML document using the
+    <code>&lt;style&gt;</code> tag. It is written in the <code>&lt;head&gt;</code> section of the HTML document.
+    This styling method applies to only that particular page.
+  </p>
+
+  <h2>When and Why to Use Embedded CSS</h2>
+  <p>
+    Embedded CSS is ideal for small projects and single-page websites. It allows developers to write CSS rules
+    directly in the same file as the HTML using:
+    <br><br>
+    <code>
+      &lt;head&gt;<br>
+      &nbsp;&nbsp;&lt;style&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;/* CSS rules here */<br>
+      &nbsp;&nbsp;&lt;/style&gt;<br>
+      &lt;/head&gt;
+    </code>
+  </p>
+
+  <p>
+    This method is useful when quick custom styling is needed. It's also helpful for learning or teaching,
+    where everything is visible in a single file without needing to reference external files.
+  </p>
+
+  <p>
+    However, if a website grows larger, embedded styles can make the code messy and harder to manage. In such cases,
+    using <code>&lt;link&gt;</code> to connect an external stylesheet is recommended.
+  </p>
+
+</body>
+</html>
